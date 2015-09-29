@@ -1,0 +1,26 @@
+{
+  "name": "react-native-circle-view",
+  "version": "1.0.1",
+  "description": "circle progress for react native android using CircleView",
+  "main": "index.android.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucleartux/react-native-circle-view.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "android",
+    "mobile",
+    "native"
+  ],
+  "author": "Adrov Igor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nucleartux/react-native-circle-view/issues"
+  },
+  "homepage": "https://github.com/nucleartux/react-native-circle-view#readme"
+}

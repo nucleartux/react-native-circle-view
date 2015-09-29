@@ -1,0 +1,2 @@
+rootProject.name = 'reactcircleview'
+include ':app'

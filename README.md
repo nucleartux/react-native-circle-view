@@ -18,7 +18,19 @@ include ':reactcircleview', ':app'
 project(':reactcircleview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-circle-view')
 ```
 
-#### Step 3 - Update Gradle Build
+#### Step 3 - Update android Gradle Build
+
+```gradle
+// file: android/build.gradle
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+
+#### Step 4 - Update app Gradle Build
 
 ```gradle
 // file: android/app/build.gradle
@@ -30,7 +42,7 @@ dependencies {
 }
 ```
 
-#### Step 4 - Register React Package
+#### Step 5 - Register React Package
 
 ```java
 ...
@@ -61,7 +73,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
 ```
 
-#### Step 5 - Require and use in Javascript
+#### Step 6 - Require and use in Javascript
 
 ```js
 // file: index.android.js

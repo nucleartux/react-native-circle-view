@@ -11,12 +11,16 @@
     "url": "git+https://github.com/nucleartux/react-native-circle-view.git"
   },
   "keywords": [
+    "react-component",
     "react",
     "react-native",
     "android",
     "mobile",
     "native"
   ],
+  "peerDependencies": {
+    "react-native": ">=0.5"
+  },
   "author": "Adrov Igor",
   "license": "MIT",
   "bugs": {

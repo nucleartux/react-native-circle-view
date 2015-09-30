@@ -61,8 +61,6 @@ local.properties
 gradle
 gradlew
 gradlew.bat
-/build.gradle
-/settings.gradle
 
 # Ignore Gradle GUI config
 gradle-app.setting

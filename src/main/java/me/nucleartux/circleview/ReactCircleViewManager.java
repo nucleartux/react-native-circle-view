@@ -21,6 +21,18 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
 
     // @UIProp(UIProp.Type.STRING)
     // public static final String PROP_ICON = "text";
+    @UIProp(UIProp.Type.BOOLEAN)
+    public static final String PROP_SHOW_TEXT_WHILE_SPINNING = "showTextWhileSpinning";
+    @UIProp(UIProp.Type.BOOLEAN)
+    public static final String PROP_AUTO_TEXT_SIZE = "autoTextSize";
+    @UIProp(UIProp.Type.BOOLEAN)
+    public static final String PROP_AUTO_TEXT_COLOR = "autoTextColor";
+    @UIProp(UIProp.Type.BOOLEAN)
+    public static final String PROP_SHOW_UNIT = "showUnit";
+    @UIProp(UIProp.Type.NUMBER)
+    public static final String PROP_TEXT_SIZE = "textSize";
+    @UIProp(UIProp.Type.NUMBER)
+    public static final String PROP_UNIT_SIZE = "unitSize";
     @UIProp(UIProp.Type.NUMBER)
     public static final String PROP_CONTOUR_SIZE = "contourSize";
     @UIProp(UIProp.Type.NUMBER)
@@ -50,11 +62,6 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
     @Override
     public CircleProgressView createViewInstance(ThemedReactContext context) {
         Log.i("CircleProgressView", "create instance");
-        // CircleProgressView view = new CircleProgressView(context, null);
-
-        // view.setMaxValue(100);
-        // view.setValue(0);
-        // view.setValueAnimated(88);
 
         return new CircleProgressView(context, null);
     }
@@ -65,15 +72,24 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
 
         BaseViewPropertyApplicator.applyCommonViewProperties(view, props);
 
-        // view.setMaxValue(100);
-        // // view.setBarColor("#00796B");
-        // view.setValue(0);
-        // view.setValueAnimated(24);
-        // view.spin();
-        // if (props.hasKey(PROP_ICON)) {
-        //     Log.i("CircleProgressView", "update view has icon");
-        //     view.setText(props.getString(PROP_ICON));
-        // }
+        if (props.hasKey(PROP_SHOW_TEXT_WHILE_SPINNING)) {
+            view.setShowTextWhileSpinning(props.getBoolean(PROP_SHOW_TEXT_WHILE_SPINNING, false));
+        }
+        if (props.hasKey(PROP_AUTO_TEXT_SIZE)) {
+            view.setAutoTextSize(props.getBoolean(PROP_AUTO_TEXT_SIZE, false));
+        }
+        if (props.hasKey(PROP_AUTO_TEXT_COLOR)) {
+            view.setAutoTextColor(props.getBoolean(PROP_AUTO_TEXT_COLOR, false));
+        }
+        if (props.hasKey(PROP_SHOW_UNIT)) {
+            view.setShowUnit(props.getBoolean(PROP_SHOW_UNIT, true));
+        }
+        if (props.hasKey(PROP_TEXT_SIZE)) {
+            view.setTextSize(props.getInt(PROP_TEXT_SIZE, 10));
+        }
+        if (props.hasKey(PROP_UNIT_SIZE)) {
+            view.setUnitSize(props.getInt(PROP_UNIT_SIZE, 10));
+        }
         if (props.hasKey(PROP_CONTOUR_SIZE)) {
             view.setContourSize(props.getFloat(PROP_CONTOUR_SIZE, 1));
         }
@@ -106,9 +122,7 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
             }
             view.setBarColor(colors);
         }
-        // if (props.hasKey(PROP_SIZE)) {
-            // view.setTextSize(props.getFloat(PROP_SIZE, 0.0f));
-        // }
+
         Log.i("CircleProgressView", "updateview finish");
         super.updateView(view, props);
     }

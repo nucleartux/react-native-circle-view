@@ -19,7 +19,9 @@ var iface = {
       unitSize: PropTypes.number,
       textSize: PropTypes.number,
 			scaleY: PropTypes.number,
-			scaleX: PropTypes.number
+			scaleX: PropTypes.number,
+			translateY: PropTypes.number,
+			translateX: PropTypes.number
     },
 };
 

@@ -18,6 +18,8 @@ var iface = {
       rimWidth: PropTypes.number,
       unitSize: PropTypes.number,
       textSize: PropTypes.number,
+			scaleY: PropTypes.number,
+			scaleX: PropTypes.number
     },
 };
 

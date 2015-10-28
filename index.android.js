@@ -21,7 +21,8 @@ var iface = {
 			scaleY: PropTypes.number,
 			scaleX: PropTypes.number,
 			translateY: PropTypes.number,
-			translateX: PropTypes.number
+			translateX: PropTypes.number,
+			rotation: PropTypes.number
     },
 };
 

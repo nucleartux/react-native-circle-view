@@ -77,11 +77,6 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
       view.setBarWidth(value);
     }
 
-    @ReactProp(name = "barWidth")
-    public void setBarWidth(CircleProgressView view, int value) {
-      view.setBarWidth(value);
-    }
-
     @ReactProp(name = "value")
     public void setValue(CircleProgressView view, int value) {
       view.setValue(value);

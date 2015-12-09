@@ -28,66 +28,65 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
     @Override
     public CircleProgressView createViewInstance(ThemedReactContext context) {
         Log.i("CircleProgressView", "create instance");
-
         return new CircleProgressView(context, null);
     }
 
-    @ReactProp(name = "showTextWhileSpinning")
+    @ReactProp(name = "showTextWhileSpinning", false)
     public void setShowTextWhileSpinning(CircleProgressView view, boolean value) {
       view.setShowTextWhileSpinning(value);
     }
 
-    @ReactProp(name = "autoTextSize")
+    @ReactProp(name = "autoTextSize", false)
     public void setAutoTextSize(CircleProgressView view, boolean value) {
       view.setAutoTextSize(value);
     }
 
-    @ReactProp(name = "autoTextColor")
+    @ReactProp(name = "autoTextColor",false)
     public void setAutoTextColor(CircleProgressView view, boolean value) {
       view.setAutoTextColor(value);
     }
 
-    @ReactProp(name = "showUnit")
+    @ReactProp(name = "showUnit", true)
     public void setShowUnit(CircleProgressView view, boolean value) {
       view.setShowUnit(value);
     }
 
-    @ReactProp(name = "textSize")
+    @ReactProp(name = "textSize",10)
     public void setTextSize(CircleProgressView view, int value) {
       view.setTextSize(value);
     }
 
-    @ReactProp(name = "unitSize")
+    @ReactProp(name = "unitSize",10)
     public void setUnitSize(CircleProgressView view, int value) {
       view.setUnitSize(value);
     }
 
-    @ReactProp(name = "contourSize")
+    @ReactProp(name = "contourSize",1)
     public void setContourSize(CircleProgressView view, float value) {
       view.setContourSize(value);
     }
 
-    @ReactProp(name = "rimWidth")
+    @ReactProp(name = "rimWidth",1)
     public void setRimWidth(CircleProgressView view, int value) {
       view.setRimWidth(value);
     }
 
-    @ReactProp(name = "barWidth")
+    @ReactProp(name = "barWidth",1)
     public void setBarWidth(CircleProgressView view, int value) {
       view.setBarWidth(value);
     }
 
-    @ReactProp(name = "value")
+    @ReactProp(name = "value",0)
     public void setValue(CircleProgressView view, int value) {
       view.setValue(value);
     }
 
-    @ReactProp(name = "maxValue")
+    @ReactProp(name = "maxValue",100)
     public void setMaxValue(CircleProgressView view, int value) {
       view.setMaxValue(value);
     }
 
-    @ReactProp(name = "valueAnimated")
+    @ReactProp(name = "valueAnimated",42)
     public void setValueAnimated(CircleProgressView view, int value) {
       view.setValueAnimated(value);
     }

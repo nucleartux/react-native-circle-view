@@ -31,62 +31,62 @@ public class ReactCircleViewManager extends SimpleViewManager<CircleProgressView
         return new CircleProgressView(context, null);
     }
 
-    @ReactProp(name = "showTextWhileSpinning", false)
+    @ReactProp(name = "showTextWhileSpinning", defaultBoolean = false)
     public void setShowTextWhileSpinning(CircleProgressView view, boolean value) {
       view.setShowTextWhileSpinning(value);
     }
 
-    @ReactProp(name = "autoTextSize", false)
+    @ReactProp(name = "autoTextSize", defaultBoolean = false)
     public void setAutoTextSize(CircleProgressView view, boolean value) {
       view.setAutoTextSize(value);
     }
 
-    @ReactProp(name = "autoTextColor",false)
+    @ReactProp(name = "autoTextColor", defaultBoolean = false)
     public void setAutoTextColor(CircleProgressView view, boolean value) {
       view.setAutoTextColor(value);
     }
 
-    @ReactProp(name = "showUnit", true)
+    @ReactProp(name = "showUnit", defaultBoolean = true)
     public void setShowUnit(CircleProgressView view, boolean value) {
       view.setShowUnit(value);
     }
 
-    @ReactProp(name = "textSize",10)
+    @ReactProp(name = "textSize", defaultFloat = 10f)
     public void setTextSize(CircleProgressView view, int value) {
       view.setTextSize(value);
     }
 
-    @ReactProp(name = "unitSize",10)
+    @ReactProp(name = "unitSize",defaultFloat = 10f)
     public void setUnitSize(CircleProgressView view, int value) {
       view.setUnitSize(value);
     }
 
-    @ReactProp(name = "contourSize",1)
+    @ReactProp(name = "contourSize", defaultFloat = 1f)
     public void setContourSize(CircleProgressView view, float value) {
       view.setContourSize(value);
     }
 
-    @ReactProp(name = "rimWidth",1)
+    @ReactProp(name = "rimWidth",defaultFloat = 1f)
     public void setRimWidth(CircleProgressView view, int value) {
       view.setRimWidth(value);
     }
 
-    @ReactProp(name = "barWidth",1)
+    @ReactProp(name = "barWidth", defaultFloat = 1f)
     public void setBarWidth(CircleProgressView view, int value) {
       view.setBarWidth(value);
     }
 
-    @ReactProp(name = "value",0)
+    @ReactProp(name = "value", defaultFloat = 0f)
     public void setValue(CircleProgressView view, int value) {
       view.setValue(value);
     }
 
-    @ReactProp(name = "maxValue",100)
+    @ReactProp(name = "maxValue", defaultFloat = 100f)
     public void setMaxValue(CircleProgressView view, int value) {
       view.setMaxValue(value);
     }
 
-    @ReactProp(name = "valueAnimated",42)
+    @ReactProp(name = "valueAnimated", defaultFloat = 42f)
     public void setValueAnimated(CircleProgressView view, int value) {
       view.setValueAnimated(value);
     }

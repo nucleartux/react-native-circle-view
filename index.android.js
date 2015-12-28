@@ -1,8 +1,9 @@
-var { requireNativeComponent, PropTypes } = require('react-native');
+var { requireNativeComponent, PropTypes, View } = require('react-native');
 
 var iface = {
     name: 'CircleView',
     propTypes: {
+      ...View.propTypes,
       showTextWhileSpinning: PropTypes.bool,
       autoTextColor: PropTypes.bool,
       autoTextSize: PropTypes.bool,

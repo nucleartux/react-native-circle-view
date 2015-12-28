@@ -19,7 +19,7 @@
     "native"
   ],
   "peerDependencies": {
-    "react-native": ">=0.15.0"
+    "react-native": ">=0.17.0"
   },
   "author": "Adrov Igor",
   "license": "MIT",

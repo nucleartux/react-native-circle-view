@@ -18,7 +18,14 @@ var iface = {
       rimWidth: PropTypes.number,
       unitSize: PropTypes.number,
       textSize: PropTypes.number,
-    },
+      renderToHardwareTextureAndroid: PropTypes.bool,
+      onLayout: PropTypes.bool,
+      importantForAccessibility: PropTypes.string,
+      accessibilityLabel: PropTypes.string,
+      accessibilityLiveRegion: PropTypes.string,
+      accessibilityComponentType: PropTypes.string,
+      testID: PropTypes.string
+    }
 };
 
 module.exports = requireNativeComponent('RCTCircleView', iface);

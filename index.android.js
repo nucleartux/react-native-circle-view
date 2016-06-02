@@ -19,11 +19,18 @@ var iface = {
       rimWidth: PropTypes.number,
       unitSize: PropTypes.number,
       textSize: PropTypes.number,
-			scaleY: PropTypes.number,
-			scaleX: PropTypes.number,
-			translateY: PropTypes.number,
-			translateX: PropTypes.number,
-			rotation: PropTypes.number
+      renderToHardwareTextureAndroid: PropTypes.bool,
+      onLayout: PropTypes.bool,
+      importantForAccessibility: PropTypes.string,
+      accessibilityLabel: PropTypes.string,
+      accessibilityLiveRegion: PropTypes.string,
+      accessibilityComponentType: PropTypes.string,
+      testID: PropTypes.string,
+      scaleY: PropTypes.number,
+      scaleX: PropTypes.number,
+      translateY: PropTypes.number,
+      translateX: PropTypes.number,
+      rotation: PropTypes.number
     },
 };
 
